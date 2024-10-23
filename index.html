@@ -1,204 +1,54 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-  <style type="text/css">
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-    body {
-      line-height: 1;
-    }
-    ol,
-    ul {
-      list-style: none;
-    }
-    blockquote,
-    q {
-      quotes: none;
-    }
-    blockquote: before, blockquote: after, q: before, q: after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodrigo Otávio Moraes - Analista de Sistemas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@400;700&display=swap');
+    
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f5f7f9;
-      color: #7b8c9a;
-      text-align: center;
-      font-size: 24px;
-      margin: 1em;
     }
+
     h1 {
       font-family: 'Julius Sans One', sans-serif;
-      color: #424044;
-      letter-spacing: 0.3em;
-      padding-bottom: 0.2em;
-      margin-top: 48px;
-      margin-bottom: 20px;
-      border-bottom: 3px solid #424044;
-      display: inline-block;
-      font-size: 48px;
-    }
-    h2 {
-      font-size: 38px;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.8em;
-    }
-    img {
-      display: block;
-      margin: auto;
-    }
-    h3 {
-      font-size: 26px;
-      margin-bottom: 0.4em;
-    }
-    .contact-info-left {
-      position: absolute;
-      bottom: 48px;
-      left: 48px;
-    }
-    .contact-info-right {
-      position: absolute;
-      bottom: 48px;
-      right: 48px;
-    }
-    .moo-business-card {
-      border: 1px dashed black;
-      width: 938px;
-      height: 630px;
-      position: relative;
     }
   </style>
-  <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-  <div class="moo-business-card">
-    <header>
-      <h1>Moraes, Rodrigo Otávio</h1>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+  <div class="moo-business-card bg-black border border-green-600 p-8 rounded-lg w-full max-w-4xl relative shadow-lg">
+    <header class="text-center">
+      <h1 class="text-4xl lg:text-5xl font-bold tracking-widest border-b-4 border-orange-500 inline-block pb-2 mb-6">
+        Moraes, Rodrigo Otávio
+      </h1>
     </header>
-    <h2>Analista de Sistemas</h2>
-    <img src="https://www.gravatar.com/avatar/b98683c8d6b227a2b281cf05562cfd99?s=200">
-    <div class="contact-info-left">
-      <h3><a href="mailto:rom232@gmail.com">rom232@gmail.com</a></h3>
+
+    <h2 class="text-2xl lg:text-3xl font-semibold text-orange-500 tracking-wide mb-8 text-center">
+      Analista de Sistemas
+    </h2>
+
+    <div class="flex justify-center mb-8">
+      <img class="w-32 h-32 rounded-full border-4 border-green-600" src="https://www.gravatar.com/avatar/b98683c8d6b227a2b281cf05562cfd99?s=200" alt="Avatar">
     </div>
-    <div class="contact-info-right">
-      <h3><a href="tel:+5561981915232">+55 61 981.915.232</a></h3>
-      <h3><a href="https://twitter.com/madpunchy">@madpunchy</a></h3>
-      <h4><a href="rom232.vcf">Download contato</a></h4>
+
+    <div class="flex justify-between text-xl">
+      <div class="contact-info-left">
+        <h3><a href="mailto:rom232@gmail.com" class="text-green-500 hover:underline">rom232@gmail.com</a></h3>
+      </div>
+
+      <div class="contact-info-right text-right">
+        <h3><a href="tel:+5561981915232" class="text-green-500 hover:underline">+55 61 981.915.232</a></h3>
+        <h3><a href="https://twitter.com/madpunchy" class="text-green-500 hover:underline">@madpunchy</a></h3>
+        <h4><a href="rom232.vcf" class="text-orange-500 hover:underline">Download contato</a></h4>
+      </div>
     </div>
   </div>
 
 </body>
 
 </html>
-
